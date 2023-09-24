@@ -1,0 +1,52 @@
+<!-- Tic Tac Toe -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <!-- css link -->
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    
+    <div class="turn-container">
+        <h3>Turn For</h3>
+        <div class="turn-box align">X</div>
+        <div class="turn-box align">O</div>
+        <div class="bg"></div>
+    </div>
+    <div class="main-container">
+        <div class="main-grid">
+            <div class="box align">0</div>
+            <div class="box align">1</div>
+            <div class="box align">2</div>
+            <div class="box align">3</div>
+            <div class="box align">4</div>
+            <div class="box align">5</div>
+            <div class="box align">6</div>
+            <div class="box align">7</div>
+            <div class="box align">8</div>
+        </div>
+        <img id="winning-gif" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzlneDUwOGpxcGljcmU2bnZubGt1b2dtNXpvMTB1bjNmNmVkYWJiNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/YkzhH8unAg0EpyZpw3/giphy.gif" alt="Winning GIF">
+    </div>
+    <h2 id="results"></h2>
+    <button id="play-again">Play Again</button>
+
+    <audio id="winning-audio" controls autoplay="false" loop="true">
+        <source src="./assets/sample-12s.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="x-audio" controls autoplay="false">
+        <source src="./assets/xaudio.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="o-audio" controls autoplay="false">
+        <source src="./assets/oaudiio.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

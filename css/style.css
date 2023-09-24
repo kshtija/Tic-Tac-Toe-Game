@@ -1,0 +1,119 @@
+/* tic tac toe game */
+* {
+    color: white;
+    font-family: sans-serif;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    /* background-image: url("https://img.freepik.com/free-photo/calculator-near-pins-sticky-notes_23-2147847755.jpg?w=1060&t=st=1695453754~exp=1695454354~hmac=f7e46247c01171d68b1b417e34dc5eae900098d44d681cab72311a03cab208c2"); */
+    background-image: url("https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1409.jpg?t=st=1695568128~exp=1695568728~hmac=765cf8947f4519e99e6f20428c894a1c20a2456a3e24b81fd9c42d7a3f17c9e1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 5vh;
+}
+.turn-container {
+    width: 170px;
+    max-height: 80px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+.turn-container h3 {
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.turn-container .turn-box {
+    border: 3px solid black;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.turn-container .turn-box:nth-child(even) {
+    border-right: none;
+}
+.bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+    height: 33px;
+    background-color: #ff2e63;
+    z-index: -1;
+}
+.main-grid {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 450px;
+    width: 450px;
+    margin: 30px auto;
+}
+.box {
+    border: 2px solid #000;
+    background: rgb(184, 115, 195);
+    font-size: 5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.box:hover {
+    background-color: #ff2e63;
+}
+#play-again {
+    background-color: #ff2e63;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+#play-again:hover {
+    padding: 10px 40px;
+    background-color: #2cf8d9;
+    color: black;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#winning-gif {
+    display: none;
+    margin-right: 140px;
+    /* width: 500px; */
+}
+#winning-audio, #x-audio, #o-audio {
+    display: none;
+}
+
+@media (max-width: 581px) {
+    #winning-gif {
+        margin: auto;
+        width: 200px;
+    }
+}
+@media (max-width: 768px) {
+    #winning-gif {
+        margin: auto;
+        width: 400px;
+    }
+}
+@media (max-width: 1024px) {
+    #winning-gif {
+        margin: auto;
+        width: 400px;
+    }
+}
